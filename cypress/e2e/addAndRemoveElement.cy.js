@@ -33,7 +33,7 @@ describe('template spec', () => {
   cy.get('button.added-manually').should('have.length', 0)
   })
 
-  it.only('delete one element and keep others', () => {
+  it('delete one element and keep others', () => {
   for(let i = 0; i < 5; i++){
     cy.contains('Add Element').click()
   }
